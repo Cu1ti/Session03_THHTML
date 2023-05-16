@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống thông tin</title>
+</head>
+
+<body>
+
+    <h2>Thống kê ngành công nghệ thông tin</h2>
+    <table border="1">
+        <thead>
+            <tr>
+            <th>Ngành</th>
+            <th>Số lượng sinh viên</th>
+            <th colspan="2">Giới tính</th>
+            <th>Thu nhập trung bình (triệu VNĐ)</th>
+            <th>ĐỘ khó dễ</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kỹ thuật phần mềm</td>
+                <td>150</td>
+                <td>Nam:50%</td>
+                <td>Nữ:50%</td>
+                <td>15</td>
+                <td>Dễ</td>
+            </tr>
+            <tr>
+                <td>Hệ thống máy tính</td>
+                <td>100</td>
+                <td>Nam:40%</td>
+                <td>Nữ:60%</td>
+                <td>12</td>
+                <td>Trung bình</td>
+            </tr>
+            <tr>
+                <td>Mạng máy tính</td>
+                <td>80</td>
+                <td>Nam:60%</td>
+                <td>Nữ:40%</td>
+                <td>18</td>
+                <td>Khó</td>
+            </tr>
+            <tr>
+                <td>Trí tuệ nhân tạo</td>
+                <td>70</td>
+                <td>Nam:70%</td>
+                <td>Nữ:30%</td>
+                <td>20</td>
+                <td>Rất khó</td>
+            </tr>
+            <tr>
+                <td>An toàn thông tin</td>
+                <td>50</td>
+                <td>Nam:35%</td>
+                <td>Nữ:65%</td>
+                <td>16</td>
+                <td>Trung bình</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <h2>Đăng kí nguyện vọng chuyên ngành</h2>
+    <form action="#" method="post">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="gender">Giới tính:</label>
+        <select id="gender" name="gender" required>
+            <option value="gender">Nam</option>
+            <option value="gender">Nữ</option>
+            <option value="gender">Khác</option>
+        </select><br>
+        <label>Nguyện vọng chuyển ngành</label>
+        <select id="wish" name="wish" required>
+            <option value="wish">Kỹ thuật phần mềm</option>
+            <option value="wish">Hệ thống máy tính</option>
+            <option value="wish">Mạng máy tính</option>
+            <option value="wish">Trí tuệ nhân tạo</option>
+            <option value="wish">An toàn thông tin</option>
+        </select><br>
+        <input type="submit" value="Đăng kí">
+    </form>
+</body>
+
+</html>
